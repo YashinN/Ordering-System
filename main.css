@@ -1,0 +1,155 @@
+
+/* General */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #D3BBDD;
+    /* background-color: #F2E6D6; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+.main-wrapper{
+    background-color: #A0E0E4;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 0;
+}
+
+
+.radio-img{
+    width: 8rem;
+    background-color:#fcc0c5;
+    padding: 10px;
+    border-radius: 100%;
+} 
+
+.input-label{
+    color:black ;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+input[type ="radio"]{
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+}
+
+input[type ="checkbox"]{
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+}
+
+/* Header */
+
+header{
+    background-color: #F582A8;
+    color: #fff;
+}
+
+.header-img{
+    width: 90%;
+}
+
+
+@media (max-width:768px) {
+
+    .donut-row div:last-of-type {
+        display: none;
+    }
+
+}
+
+
+/* Username entry */
+
+.e{
+    text-align: center;
+    background-color: #e79292fc;
+    border: 1px solid #F582A8;
+    padding: 2px 20px;
+    border-radius: 10px;
+    color: #cb1414;
+    margin: 1rem auto;
+   
+}
+
+
+/* Donut Glaze Section */
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+
+.glaze-item{
+
+    background-color: #FCC0C5;
+    background-color: #D3BBDD;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+
+}
+
+.label{
+    color: #fff;
+}
+
+
+/* Add toppings section */
+
+
+.topping-item{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.toppings-container{
+    background-color: #D3BBDD;
+    border-radius: 1rem;
+}
+
+.toppings-img{
+    width: 6rem;
+}
+
+
+/* Filling Section */
+
+#empty{
+    gap: 38%;
+}
+
+p{
+    
+}
+
+
+
+
+
+
+
+

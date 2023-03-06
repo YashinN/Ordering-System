@@ -1,0 +1,308 @@
+
+<?php session_start();?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
+    <title>Ordering System</title>
+</head>
+<body>
+
+    <?php 
+
+        if(isset($_POST['submit'])){
+
+            $username = $_POST['username'];
+            $username = trim($username);
+            
+            if(empty($username)){
+                
+            }
+            
+        }
+    
+    
+    ?>
+
+    <div class="container main-wrapper">
+        <header class = "p-5">
+            <div class = "row mb-5">
+                <h1 class = "display-3">Dropping Donuts...</h1>
+            </div>
+           
+            <div class = "row donut-row">
+                <div class = "col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                    <img class = "img-fluid header-img"src="./584fcc976a5ae41a83ddee8e.png" alt="">
+                </div>
+
+                <div class = "col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                    <img class ="img-flud header-img" src="./kisspng-doughnut-european-cuisine-breakfast-donut-png-image-collection-5a7ca6386f08f6.5215348915181184564548.png" alt="">
+                </div>
+
+                <div class = "col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                    <img class ="img-fluid header-img"src="./kisspng-doughnut-dessert-bakery-cake-donut-png-image-collection-5a7820a5d3cce0.3589088715178221178675.png" alt="">
+                </div>
+
+                <div class = "col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                    <img class ="img-fluid header-img"src="./three.png" alt="">
+                   
+                </div>
+            </div>
+        </header>
+
+        <div class="container p-0">
+            <form action="" method ="post">
+                <div class="go p-5">
+                    <div class = "col-12">
+                        <label for="username" class="form-label fs-1">Enter Username</label>
+                        <p class = "e">Please enter a username</p>
+                        <input type="text" class="form-control" name ="username" id="username" placeholder="username">
+                    </div>
+                </div>
+                
+                <div class="container mb-5">
+                    <h5 class = "display-6 text-center section-label mb-5">Choose Your Glaze</h5>
+                    <div class="row gy-3">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center px-2">
+                            <div class = "glaze-item px-2 py-3">
+                                <div class = "row text-center">
+                                    <label class="form-check-label label fs-4" for="glaze" id = "plain">Plain</label>
+                                </div>
+                               
+                                <div class = "item">
+                                    <input class="form-check-input one" type="radio" name="glaze" id="plain" value ="plain" checked>
+                                    <img class = "radio-img"src="./one.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center px-2">
+                            <div class = "glaze-item px-2 py-3">
+                                <div class = "row text-center">
+                                    <label class="form-check-label label fs-4" for="chocolate" id = "chocolate">Chocolate</label>
+                                </div>
+                               
+                                <div class = "item">
+                                    <input class="form-check-input one"  type="radio" name="glaze" id="chocolate" value ="chocolate">
+                                    <img class = "radio-img" src="./kisspng-doughnut-dessert-bakery-cake-donut-png-image-collection-5a7820a5d3cce0.3589088715178221178675.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center px-2">
+
+                            <div class = "glaze-item px-2 py-3">
+                                <div class = "row text-center">
+                                    <label class="form-check-label label fs-4" for="glaze" id = "bubblegum">Bubblegum</label>
+                                </div>
+                               
+                                <div class = "item">
+                                    <input class="form-check-input one" name ="glaze" id = "bubblegum" type="radio" name="glaze" id="bubblegum" value ="bubblegum">
+                                    <img class = "radio-img" src="./kisspng-doughnut-european-cuisine-breakfast-donut-png-image-collection-5a7ca6386f08f6.5215348915181184564548.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center px-2">
+                            <div class = "glaze-item px-2 py-3">
+                                <div class = "row text-center">
+                                    <label class="form-check-label label fs-4" for="glaze" id = "banana">Banana</label>
+                                </div>
+                               
+                                <div class = "item">
+                                    <input class="form-check-input one" name ="glaze" id = "banana" type="radio" name="glaze" id="banana" value ="banana">
+                                    <img class = "radio-img"src="./one.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mb-5">
+                    <h5 class = "text-center display-6 mb-5 section-label">Add Toppings</h5>
+                    <div class="row gy-3">
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center align-items-center">
+                            <div class = "glaze-item px-2 py-2">
+                                <div class = "row text-center">
+                                    <label class="form-check-label label fs-4" for="flexRadioDefault1">Sprinkles</label>
+                                </div>
+                               
+                                <div class = "item">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <img class = "toppings-img" src="./—Pngtree—chocolate chips photograph_6943402.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center align-items-center">
+                            <div class = "glaze-item px-2 py-2">
+                                <div class = "row text-center">
+                                    <label class="form-check-label label fs-4" for="flexRadioDefault1">Choc Chips</label>
+                                </div>
+                               
+                                <div class = "item">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <img class = "toppings-img" src="./—Pngtree—chocolate chips photograph_6943402.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center align-items-center">
+                            <div class = "glaze-item px-2 py-2">
+                                <div class = "row text-center">
+                                    <label class="form-check-label label fs-4" for="flexRadioDefault1">Tofee Bits</label>
+                                </div>
+                               
+                                <div class = "item">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <img class = "toppings-img" src="./—Pngtree—chocolate chips photograph_6943402.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center align-items-center">
+                            <div class = "glaze-item px-2 py-2">
+                                <div class = "row text-center">
+                                    <label class="form-check-label label fs-4" for="flexRadioDefault1">Strawberries</label>
+                                </div>
+                               
+                                <div class = "item">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <img class = "toppings-img" src="./—Pngtree—chocolate chips photograph_6943402.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center align-items-center">
+                            <div class = "glaze-item px-2 py-2">
+                                <div class = "row text-center">
+                                    <label class="form-check-label label fs-4" for="flexRadioDefault1">Almonds</label>
+                                </div>
+                               
+                                <div class = "item">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <img class = "toppings-img" src="./—Pngtree—chocolate chips photograph_6943402.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center align-items-center">
+                            <div class = "glaze-item px-2 py-2">
+                                <div class = "row text-center">
+                                    <label class="form-check-label label fs-4" for="flexRadioDefault1">Oreo</label>
+                                </div>
+                               
+                                <div class = "item">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <img class = "toppings-img" src="./—Pngtree—chocolate chips photograph_6943402.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mb-5">
+                    <h5 class = "text-center section-label display-6 mb-5">Add a Filling</h5>
+                    <div class="row gy-3">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex px-2">
+                            <div class = "glaze-item px-2 py-2" id = "empty">
+                                <div class = "row text-center">
+                                    <label class="form-check-label label fs-4" for="flexRadioDefault1">None</label>
+                                </div>
+                               
+                                <div class = "item">
+                                    <input class="form-check-input one" data-rt = "chocolate" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center px-2">
+                            <div class = "glaze-item px-2 py-2">
+                                <div class = "row text-center">
+                                    <label class="form-check-label label fs-4" for="flexRadioDefault1">Custard</label>
+                                </div>
+                               
+                                <div class = "item">
+                                    <input class="form-check-input one" data-rt = "chocolate" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                    <img class = "radio-img"src="./filling-3.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center px-2">
+                            <div class = "glaze-item px-2 py-2">
+                                <div class = "row text-center">
+                                    <label class="form-check-label label fs-4" for="flexRadioDefault1">Peppermint</label>
+                                </div>
+                               
+                                <div class = "item">
+                                    <input class="form-check-input one" data-rt = "chocolate" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                    <img class = "radio-img"src="./filling-2.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center px-2">
+                            <div class = "glaze-item px-2 py-2">
+                                <div class = "row text-center">
+                                    <label class="form-check-label label fs-4" for="flexRadioDefault1">Chocolate</label>
+                                </div>
+                               
+                                <div class = "item">
+                                    <input class="form-check-input one" data-rt = "chocolate" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                    <img class = "radio-img"src="./filling-1.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div> 
+
+                <div class="container mb-5">
+                    <div class = "row">
+                        
+                        <div class="col-6 px-3">
+                            <label for="quanity" class="form-label fs-1 mb-3 input-label">Quantity</label>
+                            <input type="number" class="form-control" id="quantity" name ="quanity" placeholder="Qty" value="1">
+                        </div>
+                
+                        <div class="col-6 px-3">
+                            <label for="Quanity" class="form-label fs-1 mb-3 input-label">Total</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">R</span>
+                                    <input type="text" class="form-control rt" id = "money" aria-label="Amount (to the nearest dollar)" value="0">
+                                     <span class="input-group-text">.00</span>
+                                 </div>
+                         </div>
+                     </div>
+
+                     <div class ="row">
+                        <input type="submit" name = "submit">
+                     </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <!-- Boostrap JS & Poppers -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
