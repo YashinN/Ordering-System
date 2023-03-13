@@ -7,25 +7,23 @@
 }
 
 body{
-    background-color: #D3BBDD;
-    /* background-color: #F2E6D6; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     font-family: monospace;
 }
 
 .main-wrapper{
-    background-color: #A0E0E4;
+    background-color: #EFF1DB;
+    
     min-height: 100vh;
-    width: 100vw;
+    min-width: 100vw;
     padding: 0;
 }
 
 
 .radio-img{
     width: 8rem;
-    background-color:#fcc0c5;
     padding: 10px;
     border-radius: 100%;
 } 
@@ -42,16 +40,29 @@ body{
 }
 
 
+#container{
+    position: relative;
+}
+.section-label::before{
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 4rem;
+    background-color: #A0E0E4;
+    left: 22%;
+}
+
+
 
 
 input[type ="radio"]{
-    min-width: 1.5rem;
-    min-height: 1.5rem;
+    min-width: 1.75rem;
+    min-height: 1.75rem;
 }
 
 input[type ="checkbox"]{
-    min-width: 1.5rem;
-    min-height: 1.5rem;
+    min-width: 1.75rem;
+    min-height: 1.75rem;
 }
 
 /* Header */
@@ -77,15 +88,15 @@ header{
 
 /* Username entry */
 
-.e{
+.userError{
     text-align: center;
-    background-color: #e79292fc;
-    border: 1px solid #F582A8;
+    background-color: #FCC0C5;
+    border: 1px solid #e60073;
     padding: 2px 20px;
     border-radius: 10px;
-    color: #cb1414;
+    color: #e60073;
     margin: 1rem auto;
-   
+    display: none;
 }
 
 
@@ -93,7 +104,7 @@ header{
 
 .item{
     display: flex;
-    flex-direction: row;
+    flex-direction: ;
     justify-content: center;
     align-items: center;
     gap:1rem;
@@ -101,20 +112,17 @@ header{
 
 
 .glaze-item{
-
     background-color: #FCC0C5;
-    background-color: #D3BBDD;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     width: 100%;
-
 }
 
-.label{
+/* .label{
     color: #fff;
-}
+} */
 
 
 /* Add toppings section */
@@ -135,6 +143,17 @@ header{
     width: 6rem;
 }
 
+.errorToppings{
+    text-align: center;
+    background-color: #FCC0C5;
+    border: 1px solid #e60073;
+    padding: 2px 20px;
+    border-radius: 10px;
+    color: #e60073;
+    margin: 1rem auto;
+    display: none;
+}
+
 
 /* Filling Section */
 
@@ -142,8 +161,18 @@ header{
     gap: 38%;
 }
 
-p{
-    
+.topping-img{
+    width: 8rem;
+    background-color:#f7eff18a;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+
+/* Tally Section */
+
+#money{
+    pointer-events: none;
 }
 
 
