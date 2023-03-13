@@ -43,16 +43,6 @@ body{
 #container{
     position: relative;
 }
-.section-label::before{
-    content: '';
-    position: absolute;
-    width: 1rem;
-    height: 4rem;
-    background-color: #A0E0E4;
-    left: 22%;
-}
-
-
 
 
 input[type ="radio"]{
@@ -119,11 +109,6 @@ header{
     gap: 1.5rem;
     width: 100%;
 }
-
-/* .label{
-    color: #fff;
-} */
-
 
 /* Add toppings section */
 

@@ -27,15 +27,7 @@
             $_SESSION['glazeType'] = $_POST['glaze'];
             $_SESSION['toppings'] = $_POST['toppings'];
             $_SESSION['filling'] = $_POST['filling'];
-           
-           
-
-            // echo $_POST['toppings'][0];
-            // echo $_POST['toppings'][1];
-            // echo $_POST['toppings'][2];
-            // echo $_POST['toppings'][3];
-            // echo $_POST['toppings'][4];
-            // echo $_POST['toppings'][5];
+            $_SESSION['username'] = $username;
             
             if(empty($username)){
                 ?> <style>.userError{display: block}</style> <?php

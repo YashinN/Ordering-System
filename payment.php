@@ -49,7 +49,7 @@
 
     <!-- Header Section -->
     <header class="container">
-        <h1>Your Order</h1>
+        <h1>Order for <?php echo $_SESSION['username']; ?></h1>
     </header>
     <!-- Header Section End -->
 
@@ -113,13 +113,13 @@
         </div>
 
         <div class="col-6 col-sm-6  col-md-4 col-lg-4 col-xl-4 my-auto output">
-            <h4 class ="">Unit Price</h4>
+            <h4 class ="">Unit Price R:</h4>
             <span><?php echo $unitCost ?></span>
             
         </div>
 
         <div class="col-6 col-sm-6 col-md-4 col-lg-4 my-auto col-xl-4 output">
-            <h4 class="">Sub-Total</h4>
+            <h4 class="">Sub-Total R:</h4>
             <span><?php echo $totalCost; ?></span>
         </div>
 
