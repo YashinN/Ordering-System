@@ -9,7 +9,7 @@
      <!-- Bootstrap Css -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
      <!-- Custom CSS -->
-     <link rel="stylesheet" href="./checkout.css">
+     <link rel="stylesheet" href="./Css/checkout.css">
 
     <title>Payment</title>
 </head>
@@ -62,7 +62,7 @@
                     <h3 class="">Glaze Type</h3>
                     <div class="item-container">
                         <h4><?php echo $_SESSION['glazeType'] ?></h4>
-                        <img class =""src="./kisspng-doughnut-dessert-bakery-cake-donut-png-image-collection-5a7820a5d3cce0.3589088715178221178675.png" alt="">
+                        <img class =""src="./images/glaze1.png" alt="">
                     </div>
                 </div>
 
@@ -70,7 +70,7 @@
                     <h3>Filling</h3>
                     <div class="item-container">
                         <h4><?php echo $_SESSION['filling']?></h4>
-                        <img class =""src="./kisspng-doughnut-dessert-bakery-cake-donut-png-image-collection-5a7820a5d3cce0.3589088715178221178675.png" alt="">
+                        <img class =""src="../images/filling-1.webp" alt="">
                     </div>
                 </div>
             </section>
@@ -80,21 +80,21 @@
                 <div class = "col">
                     <div class="item-container">
                         <h4><?php echo $_SESSION['toppings'][0]?></h4>
-                        <img class =""src="./kisspng-doughnut-dessert-bakery-cake-donut-png-image-collection-5a7820a5d3cce0.3589088715178221178675.png" alt="">
+                        <img class =""src="./images/topping1.png" alt="">
                     </div>
                 </div>
 
                 <div class = "col">
                     <div class="item-container">
                         <h4><?php echo $_SESSION['toppings'][1]?></h4>
-                        <img class =""src="./kisspng-doughnut-dessert-bakery-cake-donut-png-image-collection-5a7820a5d3cce0.3589088715178221178675.png" alt="">
+                        <img class =""src="./images/topping1.png" alt="">
                     </div>
                 </div>
 
                 <div class = "col">
                     <div class="item-container">
                         <h4><?php echo $_SESSION['toppings'][2]?></h4>
-                        <img class =""src="./kisspng-doughnut-dessert-bakery-cake-donut-png-image-collection-5a7820a5d3cce0.3589088715178221178675.png" alt="">
+                        <img class =""src="./images/topping1.png" alt="">
                     </div>
                 </div> 
             </section>

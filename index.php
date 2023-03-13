@@ -11,7 +11,7 @@
     <!-- Bootstrap Css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./Css/main.css">
     <title>Ordering System</title>
 </head>
 <body>
@@ -49,19 +49,19 @@
            
             <div class = "row donut-row">
                 <div class = "col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3">
-                    <img class = "img-fluid header-img"src="./584fcc976a5ae41a83ddee8e.png" alt="">
+                    <img class = "img-fluid header-img"src="./images/glaze1.png" alt="">
                 </div>
 
                 <div class = "col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3">
-                    <img class ="img-flud header-img" src="./kisspng-doughnut-european-cuisine-breakfast-donut-png-image-collection-5a7ca6386f08f6.5215348915181184564548.png" alt="">
+                    <img class ="img-flud header-img" src="./images/glaze2.png" alt="">
                 </div>
 
                 <div class = "col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3">
-                    <img class ="img-fluid header-img"src="./kisspng-doughnut-dessert-bakery-cake-donut-png-image-collection-5a7820a5d3cce0.3589088715178221178675.png" alt="">
+                    <img class ="img-fluid header-img"src="./images/glaze3.png" alt="">
                 </div>
 
                 <div class = "col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3">
-                    <img class ="img-fluid header-img"src="./three.png" alt="">
+                    <img class ="img-fluid header-img"src="./images/glaze4.png" alt="">
                    
                 </div>
             </div>
@@ -88,7 +88,7 @@
                                
                                 <div class = "item">
                                     <input class="form-check-input glaze-check" type="radio" name="glaze" id="plain" value ="plain" checked>
-                                    <img class = "radio-img"src="./one.png" alt="">
+                                    <img class = "radio-img"src="./images/glaze4.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                                
                                 <div class = "item">
                                     <input class="form-check-input glaze-check"  type="radio" name="glaze" id="chocolate" value ="chocolate">
-                                    <img class = "radio-img" src="./kisspng-doughnut-dessert-bakery-cake-donut-png-image-collection-5a7820a5d3cce0.3589088715178221178675.png" alt="">
+                                    <img class = "radio-img" src="./images/glaze2.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -115,7 +115,7 @@
                                
                                 <div class = "item">
                                     <input class="form-check-input glaze-check" name ="glaze" id = "bubblegum" type="radio" name="glaze" id="bubblegum" value ="bubblegum">
-                                    <img class = "radio-img" src="./kisspng-doughnut-european-cuisine-breakfast-donut-png-image-collection-5a7ca6386f08f6.5215348915181184564548.png" alt="">
+                                    <img class = "radio-img" src="./images/glaze3.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -128,7 +128,7 @@
                                
                                 <div class = "item">
                                     <input class="form-check-input glaze-check" name ="glaze" id = "banana" type="radio" name="glaze" id="banana" value ="banana">
-                                    <img class = "radio-img"src="./one.png" alt="">
+                                    <img class = "radio-img"src="../images/glaze5.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -147,7 +147,7 @@
                                
                                 <div class = "item">
                                     <input class="form-check-input toppings" type="checkbox" name = "toppings[]" value="sprinkles" id="">
-                                    <img class = "toppings-img" src="./pngfind.com-sprinkles-png-309468.png" alt="">
+                                    <img class = "toppings-img" src="./images/topping1.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -160,7 +160,7 @@
                                
                                 <div class = "item">
                                     <input class="form-check-input toppings" type="checkbox" name ="toppings[]"  value="choc chips" id="">
-                                    <img class = "toppings-img" src="./—Pngtree—chocolate chips photograph_6943402.png" alt="">
+                                    <img class = "toppings-img" src="./images/topping1.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -173,7 +173,7 @@
                                
                                 <div class = "item">
                                     <input class="form-check-input toppings" type="checkbox" name = "toppings[]" value="tofee bits" id="">
-                                    <img class = "toppings-img" src="./—Pngtree—chocolate chips photograph_6943402.png" alt="">
+                                    <img class = "toppings-img" src="./images/topping1.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -186,7 +186,7 @@
                                
                                 <div class = "item">
                                     <input class="form-check-input toppings" type="checkbox" name = "toppings[]" value="strawberries" id="">
-                                    <img class = "toppings-img" src="./—Pngtree—chocolate chips photograph_6943402.png" alt="">
+                                    <img class = "toppings-img" src="./images/topping1.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -199,7 +199,7 @@
                                
                                 <div class = "item">
                                     <input class="form-check-input toppings" type="checkbox" name = "toppings[]" value="almonds" id="">
-                                    <img class = "toppings-img" src="./—Pngtree—chocolate chips photograph_6943402.png" alt="">
+                                    <img class = "toppings-img" src="./images/topping1.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -212,7 +212,7 @@
                                
                                 <div class = "item">
                                     <input class="form-check-input toppings" type="checkbox" name = "toppings[]" value="oreo" id="flexCheckDefault">
-                                    <img class = "toppings-img" src="./—Pngtree—chocolate chips photograph_6943402.png" alt="">
+                                    <img class = "toppings-img" src="./images/topping1.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -242,7 +242,7 @@
                                
                                 <div class = "item">
                                     <input class="form-check-input fillings"  type="radio" name="filling" id="custard" value ="custard">
-                                    <img class = "topping-img"src="./filling-3.webp" alt="">
+                                    <img class = "topping-img"src="./images/filling-3.webp" alt="">
                                 </div>
                             </div>
                         </div>
@@ -255,7 +255,7 @@
                                
                                 <div class = "item">
                                     <input class="form-check-input fillings" type="radio" name="filling" id="peppermint" value = "peppermint">
-                                    <img class = "radio-img"src="./filling-2.webp" alt="">
+                                    <img class = "radio-img"src="./images/filling-2.webp" alt="">
                                 </div>
                             </div>
                         </div>
@@ -271,7 +271,7 @@
                                
                                 <div class = "item">
                                     <input class="form-check-input fillings"  type="radio" name="filling" id="chocolate" value = "chocolate">
-                                    <img class = "radio-img"src="./filling-1.webp" alt="">
+                                    <img class = "radio-img"src="./images/filling-1.webp" alt="">
                                 </div>
                             </div>
                         </div>
@@ -313,6 +313,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     <!-- JavaScript -->
-    <script src="./script.js"></script>
+    <script src="./Scropts/script.js"></script>
 </body>
 </html>
