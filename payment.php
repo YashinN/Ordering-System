@@ -18,7 +18,6 @@
     <?php 
 
         $unitCost = calcPriceOfDonut($_SESSION['glazeType'], $_SESSION['toppings'], $_SESSION['filling']);
-
         $totalCost = getOrderTotal($unitCost,$_SESSION['quantity']);
 
         function calcPriceOfDonut($glazeType,$toppings,$filling):int{
